@@ -49,20 +49,6 @@ footer {
     text-decoration: none;
 }
 
-#ProgramLogo{
-    position: absolute;
-    top: 120px;
-    left: 5px;
-}
-
-#aboutTP{
-    color: #05386B;
-    position: absolute;
-    font-size: 20px;
-    top: 115px;
-    left: 90px;
-    font-size: 22px;
-}
 #SDK6-0{
     color: #05386B;
     position: absolute;
@@ -83,14 +69,21 @@ footer {
     top: 230px;
     left: 90px;
 }
-#rus{
-    font-size: 20px;
-    position: absolute;
-    top: 25px;
-    left: 25px;
-}
 
-#downloadTP{
+#ProgramLogo{
+    position: absolute;
+    top: 120px;
+    left: 5px;
+}
+#AboutTextPad{
+    color: #05386B;
+    position: absolute;
+    font-size: 20px;
+    top: 115px;
+    left: 90px;
+    font-size: 22px;
+}
+#DownloadTextPad{
     background-color: #379683 ;
     color: #EDF5E1;
     padding: 11px;
@@ -101,8 +94,7 @@ footer {
     left: 85px;
     text-decoration: none;
 }
-
-#informationTP{
+#AllDownloads{
     background-color: #379683;
     color: #EDF5E1;
     padding: 11px;
@@ -113,21 +105,22 @@ footer {
     left: 270px;
     text-decoration: none;
 }
-#screen_ru_tp{
+
+#ScreenTextPad1{
     position: absolute;
     top: 320px;
     left: 40px;
 }
-#screen_en_tp{
+#ScreenTextPad2{
     position: absolute;
     top: 660px;
     left: 40px;
 }
+
 .minimized {
     width: 600px;
     border: 1px solid #FFF;
 }
-
 .container img {
     transition: 0.5s;
 }
