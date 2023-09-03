@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-    <link href="dist\css\lightbox.css" rel="stylesheet" type="text/css"/>
-    <title>TextPad+</title>
-    <link rel="shortcut icon" href="res\TextPadLogo.png" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <a class="link" id=siteName href="https://mr-nichosik.github.io/Main_Page/"><center>TextPad+</center></a>
-        <a class="link" id=Main href="https://mr-nichosik.github.io/Main_Page/"><center>Главная</center></a>
-        <a class="link" id=Downloads href="https://mr-nichosik.github.io/AboutTextPadPlus/"><center>Загрузки</center></a>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Текстовый редактор TextPad+">
 
-    <img id="ProgramLogo" src="res\TextPadLogo.png" height="60">
-    <div id=AboutTextPad>TextPad+ — это бесплатный текстовый редактор с открытым исходным кодом, предназначенный для быстрого создания и редактирования текстовых документов. Для новых версий программы необходима установленная для Windows библиотека .NET 6 Runtime Desktop. Для версий с 1.4 по 1.8 включительно нужны библиотеки .NET Core 3.1 и .NET 5 Runtime Desktop. Для версий старее нужна только библиотека .Net Core 3.1 Runtime Desktop. Работает на архитектуре x86 и поддерживает Windows 7.</div>
-    <a class="link" id="GitHubSource" target="_blank" href="https://github.com/Mr-Nichosik/TextPadPlus">Исходный код программы на GitHub</a>
-    <a class="link" id=SDK6-0 href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.16-windows-x86-installer">.Net 6.0</a>
-    <a class="link" id=SDK5-0 href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-5.0.17-windows-x86-installer">.Net 5.0</a>
-    <a class="link" id=SDK3-1 href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-3.1.32-windows-x86-installer">.Net Core 3.1</a>
-    <a class="Button" id="DownloadTextPad" href="res\Setup TextPad+.exe" >Скачать TextPad+ 2.4.0</a>
-    <a class="Button" id="AllDownloads" href="https://mr-nichosik.github.io/AboutTextPadPlus/">Все версии</a>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="dist\css\lightbox.css" rel="stylesheet" type="text/css"/>
 
-    <div class="container">
-        <a href="res\ScreenTextPad1.png" data-lightbox="test"><img id="ScreenTextPad1" src="res\ScreenTextPad1.png" class="minimized" alt="Кликни для увеличения" /></a>
-        <a href="res\ScreenTextPad2.png" data-lightbox="test"><img id="ScreenTextPad2" src="res\ScreenTextPad2.png" class="minimized" alt="Кликни для увеличения" /></a>
-    </div>
+        <title>TextPad+</title>
+        <link rel="shortcut icon" href="res\TextPadLogo.png" type="image/x-icon">
+    </head>
 
-    <script src="dist\js\lightbox-plus-jquery.js"></script>
-</body>
+    <body>
+        <header>
+            <a class="link" id=MainPage href="https://mr-nichosik.github.io/Main_Page/">Главная</a>
+            <a class="link" id=SiteName href="https://mr-nichosik.github.io/Main_Page/"><h5>TextPad+</h5></a>
+            <a class="link" id=DownloadsPage href="https://mr-nichosik.github.io/AboutTextPadPlus/">Загрузки</a>
+        </header>
+
+        <main>
+            <img id="ProgramLogo" src="res\TextPadLogo.png" height="60">
+            <p id=AboutTextPad>TextPad+ — это текстовый редактор с открытым исходным кодом, способный быстро создавать простые текстовые файлы. Работает на ПК архитектуры x86 и ОС Windows 7 и выше.<br/>Для новых версий нужно установить для библиотеку .NET 6.0 Desktop Runtime. Для версий с 1.4 по 1.8 включительно нужны библиотеки .NET Core 3.1 и .NET 5 Runtime Desktop.<br/>Для более старых версий нужно установить только библиотеку для .NET Core 3.1.</p>
+            <a class="link" id="GitHubSource" href="https://github.com/Mr-Nichosik/TextPadPlus" target="_blank">Исходный код программы на GitHub</a>
+            <a class="link" id=SDK6-0 href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.16-windows-x86-installer">.Net 6.0</a>
+            <a class="link" id=SDK5-0 href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-5.0.17-windows-x86-installer">.Net 5.0</a>
+            <a class="link" id=SDK3-1 href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-3.1.32-windows-x86-installer">.Net Core 3.1</a>
+            <a class="Button" id="DownloadTextPad" href="res\Setup TextPad+.exe" >Скачать TextPad+ 2.4.0</a>
+            <a class="Button" id="AllDownloads" href="https://mr-nichosik.github.io/AboutTextPadPlus/">Все версии</a>
+
+            <div class="container">
+                <a href="res\ScreenTextPad1.png" data-lightbox="test">
+                    <img class="minimized" id="ScreenTextPad1" src="res\ScreenTextPad1.png" alt="Скриншот программы TextPad+" />
+                </a>
+
+                <a href="res\ScreenTextPad2.png" data-lightbox="test">
+                    <img class="minimized" id="ScreenTextPad2" src="res\ScreenTextPad2.png" alt="Скриншот программы TextPad+" />
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Последняя версия программы вышла: 03.09.2023</p>
+            <p>Разработал Mr Nichosik</p>
+        </footer>
+
+        <script src="dist\js\lightbox-plus-jquery.js"></script>
+    </body>
 </html>
