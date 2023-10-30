@@ -33,6 +33,7 @@ header {
     outline-width: 0.5px;
     transition: 0.3s;
     outline-color: #05386B;
+    box-shadow: 2px 2px 5px #888;
 }
 .Button:hover{
     color: #e8fccb;
@@ -137,13 +138,11 @@ header {
     position: absolute;
     margin-top: 300px;
     margin-left: 30px;
-    box-shadow: 2px 2px 5px #888;
 }
 #AllDownloads{
     position: absolute;
     margin-top: 300px;
     margin-left: 235px;
-    box-shadow: 2px 2px 5px #888;
 }
 
 /*Стили для скринов*/
