@@ -115,21 +115,28 @@ body{
     margin-top: 230px;
 }
 
-#SDK6-0{
+#SDK8-0{
     position: absolute;
     font-size: 21px;
     margin-left: 30px;
     margin-top: 260px;
 }
-#SDK5-0{
+#SDK6-0{
     position: absolute;
     font-size: 21px;
     margin-left: 120px;
     margin-top: 260px;
-}#SDK3-1{
+}
+#SDK5-0{
     position: absolute;
     font-size: 21px;
     margin-left: 210px;
+    margin-top: 260px;
+}
+#SDK3-1{
+    position: absolute;
+    font-size: 21px;
+    margin-left: 300px;
     margin-top: 260px;
 }
 
