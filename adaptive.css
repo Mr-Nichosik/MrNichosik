@@ -1,0 +1,24 @@
+/*Адаптиация*/
+@media only screen and (max-width: 1625px) {
+    #AboutTextPad{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1425px) {
+    #InstallationGuideBlock{
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 1393px) {
+    #InstallationGuideBlock{
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #InstallationGuideBlock{
+        height: 210px;
+    }
+}

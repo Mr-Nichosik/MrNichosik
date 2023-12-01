@@ -6,7 +6,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
+body{
+    background-color: #EDF5E1;
+}
+
+header { 
     position: relative;
     background-color: #5CDB95;
     color: #05386B;
@@ -15,10 +19,7 @@ header {
     outline-style: solid;
     outline-width: 2px;
     outline-color: #05386B;
-}
-
-body{
-    background-color: #EDF5E1;
+    text-align: center;
 }
 
 /*Стили класса Button*/
@@ -26,7 +27,7 @@ body{
     background-color: #209b72f6;
     color: #EDF5E1;
     font-weight: 500;
-    padding: 11px;
+    padding: 10px;
     opacity: 0.95;
     text-decoration: none;
     outline-style: solid;
@@ -59,35 +60,43 @@ body{
 
 /* Стили для кнопок , расположенных в header'е */
 
-#SiteName{
-    text-decoration: none;
-    position: absolute;
-    font-size: 40px;
-    left: 50%;
-    top: 18%;
-}
 #MainPage{
-    font-size: 28px;
-    position: absolute;
+    text-decoration: none;
+    font-size: 35px;
+    position: relative;
+    float: left;
     left: 25%;
-    top: 20%;
+    top: 10px;
 }
 #DownloadsPage{
-    font-size: 28px;
-    position: absolute;
-    left: 75%;
-    top: 20%;
+    text-decoration: none;
+    font-size: 35px;
+    position: relative;
+    float: right;
+    left: -25%;
+    top: 10px;
 }
 
 /* Стили основной страницы */
 
 /*Стили для описания и логотипа*/
+
+.container{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#DescriptionBlock{
+    height: 100px;
+}
+
 #ProgramLogo{
     position: absolute;
-    margin-left: 30px;
-    margin-top: 30px;
     box-shadow: 2px 2px 5px #888;
     transition: 0.4s;
+    margin-top: 20px;
+    margin-left: 30px;
 }
 #ProgramLogo:hover{
     transform: scale(1.07);
@@ -96,74 +105,66 @@ body{
     position: absolute;
     color: #05386B;
     font-size: 21px;
-    margin-left: 120px;
-    margin-top: 45px;
+    margin-left: 110px;
+    margin-top: 35px;
+}
+
+#InstallationGuideBlock{
+    height: 130px;
 }
 #InstallationGuide{
     position: absolute;
     color: #05386B;
     font-size: 21px;
+    margin-top: 5px;
     margin-left: 30px;
-    margin-top: 100px;
+    padding-right: 30px;
 }
 
 /*Стили для ссылок*/
+#LinksBlock{
+    height:120px;
+}
+
 #GitHubSource{
-    position: absolute;
+    position: relative;
     font-size: 21px;
     margin-left: 30px;
-    margin-top: 230px;
+    top: 10px;
 }
 
-#SDK8-0{
-    position: absolute;
+#SDK{
+    position: relative;
     font-size: 21px;
-    margin-left: 30px;
-    margin-top: 260px;
-}
-#SDK6-0{
-    position: absolute;
-    font-size: 21px;
-    margin-left: 120px;
-    margin-top: 260px;
-}
-#SDK5-0{
-    position: absolute;
-    font-size: 21px;
-    margin-left: 210px;
-    margin-top: 260px;
-}
-#SDK3-1{
-    position: absolute;
-    font-size: 21px;
-    margin-left: 300px;
-    margin-top: 260px;
+    margin-left: 20px;
+    top: 10px;
 }
 
-/*Стили для кнопок*/
 #DownloadTextPad{
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 30px;
+    position: relative;
+    text-align: center;
+    top: 70px;
+    margin-left: -790px;
 }
 #AllDownloads{
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 235px;
+    position: relative;
+    text-align: center;
+    top: 70px;
+    margin-left: 20px;
 }
 
 /*Стили для скринов*/
 #ScreenTextPad1{
-    position: absolute;
-    margin-top: 360px;
+    position: relative;
     margin-left: 30px;
     box-shadow: 2px 2px 5px #888;
+    margin-top: 10px;
 }
 #ScreenTextPad2{
-    position: absolute;
-    margin-top: 690px;
+    position: relative;
     margin-left: 30px;
     box-shadow: 2px 2px 5px #888;
+    margin-top: 10px;
 }
 
 /*Lightbox*/
