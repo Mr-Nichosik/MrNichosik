@@ -2,9 +2,8 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <meta name="google-site-verification" content="m4z6I-xnkBrjA6l6Rj1DbGydXbkoVP6dD0F1ux7vSYs" />
 
-        <title>TextPad+</title>
+        <title>Mr Nichosik</title>
         <link rel="shortcut icon" href="res\TextPadLogo.png" type="image/x-icon">
 
         <link href="style.css" rel="stylesheet"/>
@@ -14,41 +13,46 @@
 
     <body>
         <header>
-            <a class="link" id=MainPage href="https://mr-nichosik.github.io/Main_Page/"><h5>Главная</h5></a>
-            <a class="link" id=DownloadsPage href="https://mr-nichosik.github.io/AboutTextPadPlus/"><h5>Загрузки</h5></a>
+            <a class="link" id=MainPage href="https://mr-nichosik.github.io/MrNichosik/"><h5>Главная</h5></a>
+            <a class="link" id=DownloadsPage href="https://mr-nichosik.github.io/MrNichosik/TextPadPlusDownloads/"><h5>Загрузки</h5></a>
         </header>
 
-        <main>      
-            <div class="containerd" id=DescriptionBlock>
+        <main>
+            <div class="container" id=DescriptionBlock>
                 <img id="ProgramLogo" src="res\TextPadLogo.png" height="60">
-                <p id=AboutTextPad>TextPad+ — это простой текстовый редактор с открытым исходным кодом, сделаный на C# .NET 8. Работает на ПК архитектуры x86 и ОС Windows 7 и выше. </p>
+                <p id=AboutTextPad>TextPad+ — это простой текстовый редактор с открытым исходным кодом, разработанный на C# .NET 8. Работает на ПК архитектуры x86 и ОС Windows 7 и выше. </p>
             </div>
 
             <div class="container" id=InstallationGuideBlock>
-                <p id="InstallationGuide">Инструкци по установке:<br>Программа, начиная с версии 2.5.0, доступна для скачивания с ветки релиза на GitHub, а для работы не требуется ни чего устанавливать.<br>Для версий с 1.9 по 2.4.0 включительно нужно установить библиотеку .NET 6.0 Desktop Runtime. Для версий с 1.4 по 1.8 включительно нужны библиотеки .NET Core 3.1 и .NET 5 Runtime Desktop. Для более старых версий нужно установить только .NET Core 3.1 Desktop Runtime.</p>    
+                <p id="InstallationGuide">Инструкция по установке:<br>Программа, начиная с версии 2.5.0, доступна для скачивания с ветки релиза на GitHub, а для работы не требуется ничего устанавливать.<br>Для версий с 1.9 по 2.4.0 включительно нужно установить библиотеку .NET 6.0 Desktop Runtime. Для версий с 1.4 по 1.8 включительно нужны библиотеки .NET Core 3.1 и .NET 5 Runtime Desktop. Для более старых версий нужно установить только .NET Core 3.1 Desktop Runtime.</p>    
             </div>
 
             <div class="container" id=LinksBlock>
-                <a class="link" id="GitHubSource" href="https://github.com/Mr-Nichosik/TextPadPlus" target="_blank">Исходный код программы на GitHub</a>
+                <a class="link" id="GitHubSource" href="https://github.com/Mr-Nichosik/TextPadPlus" target="_blank">Исходный код на GitHub</a>
                 <a class="link" id=SDK href="https://dotnet.microsoft.com/en-us/download/dotnet/8.0">.Net 8.0</a>
                 <a class="link" id=SDK href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.16-windows-x86-installer">.Net 6.0</a>
                 <a class="link" id=SDK href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-5.0.17-windows-x86-installer">.Net 5.0</a>
                 <a class="link" id=SDK href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-3.1.32-windows-x86-installer">.Net Core 3.1</a>
+
+            </div>
+
+            <div class="container" id=ButtonsBlock>
                 <a class="Button" id="DownloadTextPad" href="https://github.com/Mr-Nichosik/TextPadPlus/releases/download/vCurrent/Setup.exe" >Скачать TextPad+ 2.9.0</a>
-                <a class="Button" id="AllDownloads" href="https://mr-nichosik.github.io/MrNichosik/TextPadPlusDownloads">Все версии</a>
+                <a class="Button" id="AllDownloads" href="https://mr-nichosik.github.io/MrNichosik/TextPadPlusDownloads//">Все версии</a>
             </div>
 
             <div class="container">
-                <a href="res\ScreenTextPad1.png" data-lightbox="test">
+                <a href="res\ScreenTextPad1.png" data-lightbox="Скриншот 1">
                     <img class="minimized" id="ScreenTextPad1" src="res\ScreenTextPad1.png" alt="Скриншот программы TextPad+" />
                 </a>
 
-                <a href="res\ScreenTextPad2.png" data-lightbox="test">
+                <a href="res\ScreenTextPad2.png" data-lightbox="Скриншот 2">
                     <img class="minimized" id="ScreenTextPad2" src="res\ScreenTextPad2.png" alt="Скриншот программы TextPad+" />
                 </a>
             </div>
         </main>
 
-        <script src="dist\js\lightbox-plus-jquery.js"></script>
+        <script src = "dist\js\lightbox-plus-jquery.js"></script>
+        <script src = "script.js"></script>
     </body>
 </html>

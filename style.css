@@ -1,9 +1,9 @@
-/* Основной стиль как для всей страницы, так и для отдельных крупных элементов */
 
+/* Основной стиль как для всей страницы, так и для отдельных крупных элементов */
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -17,32 +17,77 @@ header {
     height: 65px;
     width: 100%;
     outline-style: solid;
-    outline-width: 2px;
+    outline-width: 3px;
     outline-color: #05386B;
+    border-radius: 0px 0px 8px 8px;
     text-align: center;
+    line-height: 45px;
 }
 
-/*Стили класса Button*/
-.Button{
-    background-color: #209b72f6;
-    color: #EDF5E1;
-    font-weight: 500;
+/*Стили класса Button
     padding: 10px;
-    opacity: 0.95;
-    text-decoration: none;
     outline-style: solid;
     outline-width: 0.5px;
-    transition: 0.3s;
     outline-color: #05386B;
-    box-shadow: 2px 2px 5px #888;
+*/
+.Button{
+    background-color: #23a87cf6;
+    color: #EDF5E1;
+
+    display: inline-block;
+
+    width: 220px;
+    height: 40px;
+    opacity: 0.95;
+    border: 2px solid #05386B;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 2px 5px #888;
+
+    line-height: 40px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    overflow: hidden;
+
+    transition: 0.3s;
 }
 .Button:hover{
     color: #e8fccb;
     outline-color: #5CDB95;
     transition: 0.3s;
+    box-shadow: 0px 8px 5px #888;
 }
 .Button:active{
     color: #ffffff;
+}
+
+.Pulse{
+    background-color: #5d8f13;
+    border-radius: 50%;
+    animation: pulse 1s ease-out;
+    transform: scale(0);
+    position: absolute;
+}
+@keyframes pulse{
+    to{
+        transform: scale(2);
+        background-color: #ffffff;
+        opacity: 0;
+    }
+}
+
+#ButtonsBlock{
+    height: 50px;
+}
+
+#DownloadTextPad{
+    position: relative;
+    margin-left: 30px;
+}
+#AllDownloads{
+    position: relative;
+    margin-left: 20px;
 }
 
 /*Стили для класса ссылки*/
@@ -58,7 +103,7 @@ header {
     color: #379683;
 }
 
-/* Стили для кнопок , расположенных в header'е */
+/* Стили для ссылок , расположенных в header'е */
 
 #MainPage{
     text-decoration: none;
@@ -89,10 +134,10 @@ header {
 
 #DescriptionBlock{
     height: 100px;
+    display: flex;
 }
-
 #ProgramLogo{
-    position: absolute;
+    position: relative;
     box-shadow: 2px 2px 5px #888;
     transition: 0.4s;
     margin-top: 20px;
@@ -102,18 +147,18 @@ header {
     transform: scale(1.07);
 }
 #AboutTextPad{
-    position: absolute;
+    position: relative;
     color: #05386B;
     font-size: 21px;
-    margin-left: 110px;
-    margin-top: 35px;
+    margin-left: 15px;
+    margin-top: 40px;
 }
 
-#InstallationGuideBlock{
-    height: 130px;
-}
+/* #InstallationGuideBlock{
+
+} */
 #InstallationGuide{
-    position: absolute;
+    position: relative;
     color: #05386B;
     font-size: 21px;
     margin-top: 5px;
@@ -123,34 +168,22 @@ header {
 
 /*Стили для ссылок*/
 #LinksBlock{
-    height:120px;
+    height:50px;
+    display: flex;
 }
 
 #GitHubSource{
     position: relative;
     font-size: 21px;
     margin-left: 30px;
-    top: 10px;
+    margin-top: 10px;
 }
 
 #SDK{
     position: relative;
     font-size: 21px;
-    margin-left: 20px;
-    top: 10px;
-}
-
-#DownloadTextPad{
-    position: relative;
-    text-align: center;
-    top: 70px;
-    margin-left: -790px;
-}
-#AllDownloads{
-    position: relative;
-    text-align: center;
-    top: 70px;
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
 }
 
 /*Стили для скринов*/
