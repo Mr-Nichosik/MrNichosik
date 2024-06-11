@@ -1,0 +1,167 @@
+
+/* Основной стиль как для всей страницы, так и для отдельных крупных элементов */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #EDF5E1;
+}
+
+/* Стиль header'а и его элементов*/
+
+header { 
+    position: relative;
+    background-color: #5CDB95;
+    color: #05386B;
+    height: 65px;
+    width: 100%;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: #05386B;
+    border-radius: 0px 0px 8px 8px;
+    text-align: center;
+    line-height: 45px;
+}
+
+/*Стили для класса ссылки*/
+.link{
+    transition: 0.3s;
+    color: #05386B;
+}
+.link:hover{
+    transition: 0.3s;
+    color: #0e5caa;
+}
+.link:active{
+    color: #379683;
+}
+
+/* Стили для кнопок header'а */
+
+#MainPage{
+    text-decoration: none;
+    font-size: 35px;
+    position: relative;
+    float: left;
+    left: 25%;
+    top: 10px;
+}
+#DownloadsPage{
+    text-decoration: none;
+    font-size: 35px;
+    position: relative;
+    float: right;
+    left: -25%;
+    top: 10px;
+}
+
+/* Стиль главных блоков страницы */
+
+.Container{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*Стили для блока с описанем и логотипом*/
+
+#DescriptionBlock{
+    height: 100px;
+    display: flex;
+}
+#ProgramLogo{
+    position: relative;
+    box-shadow: 2px 2px 5px #888;
+    transition: 0.4s;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#ProgramLogo:hover{
+    transform: scale(1.07);
+}
+#Description{
+    position: relative;
+    color: #05386B;
+    font-size: 21px;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+/* Стили для подблоков с кнопкой загрузки и описанием версий */
+
+.ContainerDownload{
+
+    width: 98%;
+    border: 3px solid #05386B;
+    height: 105px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 2px 5px #888;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.VersionDescription{
+    display: flex;
+    font-size: 18.5px;
+    color: #0e5caa;
+
+    position: relative;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+/*Стили класса Button*/
+.Button{
+    background-color: #23a87cf6;
+    color: #EDF5E1;
+
+    display: block;
+
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 240px;
+    height: 40px;
+    opacity: 0.95;
+    border: 2px solid #05386B;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 2px 5px #888;
+
+    line-height: 40px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+.Button:hover{
+    color: #e8fccb;
+    outline-color: #5CDB95;
+    transition: 0.3s;
+    box-shadow: 0px 8px 5px #888;
+}
+.Button:active{
+    color: #ffffff;
+}
+
+.Pulse{
+    background-color: #5d8f13;
+    border-radius: 50%;
+    animation: pulse 1s ease-out;
+    transform: scale(0);
+    position: relative;
+}
+@keyframes pulse{
+    to{
+        transform: scale(2);
+        background-color: #ffffff;
+        opacity: 0;
+    }
+}
