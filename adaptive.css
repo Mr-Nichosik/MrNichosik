@@ -23,4 +23,11 @@
     #AboutTextPad{
         margin-top: 10px;
     }
+
+    #MainPage{
+        left: 18%;
+    }
+    #DownloadsPage{
+        left: -18%;
+    }
 }
