@@ -1,13 +1,20 @@
 
 /* Основной стиль как для всей страницы, так и для отдельных крупных элементов */
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background-color: #EDF5E1;
+    display: flex;
+    flex-direction: column;
+    min-height: 99.9455vh;
+}
+
+main {
+    flex: 1;
 }
 
 header { 
@@ -24,8 +31,21 @@ header {
     line-height: 45px;
 }
 
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #5CDB95;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: #05386B;
+    border-radius: 8px 8px 0px 0px;
+    vertical-align: middle;
+    height: 35px;
+    line-height: 35px;
+}
+
 /* Стили класса Button */
-.Button{
+.Button {
     background-color: #23a87cf6;
     color: #EDF5E1;
 
@@ -49,62 +69,62 @@ header {
 
     transition: 0.3s;
 }
-.Button:hover{
+.Button:hover {
     color: #e8fccb;
     border: 2px solid #0c57a1;
     box-shadow: 0px 8px 5px #888;
 }
-.Button:active{
+.Button:active {
     color: #ffffff;
     transition: 0.3s;
     background-color: #0e7754f6;
     border: 2px solid #0d4c4e;
 }
 
-.Pulse{
+.Pulse {
     background-color: #5d8f13;
     border-radius: 50%;
     animation: pulse 0.6s ease-out;
     transform: scale(0);
     position: absolute;
 }
-@keyframes pulse{
-    to{
+@keyframes pulse {
+    to {
         transform: scale(2);
         background-color: #ffffff;
         opacity: 0;
     }
 }
 
-#ButtonsBlock{
+#ButtonsBlock {
     height: 50px;
 }
 
-#DownloadTextPad{
+#DownloadTextPad {
     position: relative;
     margin-left: 30px;
 }
-#AllDownloads{
+#AllDownloads {
     position: relative;
     margin-left: 20px;
 }
 
 /*Стили для класса ссылки*/
-.link{
+.link {
     transition: 0.3s;
     color: #05386B;
 }
-.link:hover{
+.link:hover {
     transition: 0.3s;
     color: #0e5caa;
 }
-.link:active{
+.link:active {
     color: #379683;
 }
 
-/* Стили для ссылок , расположенных в header'е */
+/* Стили для ссылок , расположенных в header'е и footer'е*/
 
-#MainPage{
+#MainPage {
     text-decoration: none;
     font-size: 35px;
     position: relative;
@@ -112,7 +132,7 @@ header {
     left: 25%;
     top: 10px;
 }
-#DownloadsPage{
+#DownloadsPage {
     text-decoration: none;
     font-size: 35px;
     position: relative;
@@ -121,21 +141,29 @@ header {
     top: 10px;
 }
 
+#FooterGitHubLink {
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    margin-left: 30px;
+}
+
+
 /* Стили основной страницы */
 
 /*Стили для описания и логотипа*/
 
-.container{
+.container {
     position: relative;
     width: 100%;
     margin-top: 10px;
 }
 
-#DescriptionBlock{
+#DescriptionBlock {
     height: 100px;
     display: flex;
 }
-#ProgramLogo{
+#ProgramLogo {
     position: relative;
     box-shadow: 2px 2px 5px #888;
     transition: 0.4s;
@@ -143,10 +171,10 @@ header {
     height: 70px;
     margin-left: 30px;
 }
-#ProgramLogo:hover{
+#ProgramLogo:hover {
     transform: scale(1.07);
 }
-#AboutTextPad{
+#AboutTextPad {
     position: relative;
     color: #05386B;
     font-size: 21px;
@@ -154,10 +182,10 @@ header {
     margin-top: 40px;
 }
 
-/* #InstallationGuideBlock{
+/* #InstallationGuideBlock {
 
 } */
-#InstallationGuide{
+#InstallationGuide {
     position: relative;
     color: #05386B;
     font-size: 21px;
@@ -167,19 +195,19 @@ header {
 }
 
 /*Стили для ссылок*/
-#LinksBlock{
+#LinksBlock {
     height:50px;
     display: flex;
 }
 
-#GitHubSource{
+#GitHubSource {
     position: relative;
     font-size: 21px;
     margin-left: 30px;
     margin-top: 10px;
 }
 
-#SDK{
+#SDK {
     position: relative;
     font-size: 21px;
     margin-left: 30px;
@@ -187,13 +215,18 @@ header {
 }
 
 /*Стили для скринов*/
-#ScreenTextPad1{
+
+#ScreenShotsBlock {
+
+}
+
+#ScreenTextPad1 {
     position: relative;
     margin-left: 30px;
     box-shadow: 2px 2px 5px #888;
     margin-top: 10px;
 }
-#ScreenTextPad2{
+#ScreenTextPad2 {
     position: relative;
     margin-left: 30px;
     box-shadow: 2px 2px 5px #888;

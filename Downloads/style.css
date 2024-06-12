@@ -1,13 +1,13 @@
 
 /* Основной стиль как для всей страницы, так и для отдельных крупных элементов */
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background-color: #EDF5E1;
 }
 
@@ -27,22 +27,38 @@ header {
     line-height: 45px;
 }
 
+footer {
+    width: 100%;
+    background-color: #5CDB95;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: #05386B;
+    border-radius: 8px 8px 0px 0px;
+    height: 35px;
+    vertical-align: middle;
+    position: relative;
+
+    margin-top: 20px;
+
+    line-height: 35px;
+}
+
 /*Стили для класса ссылки*/
-.link{
+.link {
     transition: 0.3s;
     color: #05386B;
 }
-.link:hover{
+.link:hover {
     transition: 0.3s;
     color: #0e5caa;
 }
-.link:active{
+.link:active {
     color: #379683;
 }
 
-/* Стили для кнопок header'а */
+/* Стили для кнопок header'а и footer' */
 
-#MainPage{
+#MainPage {
     text-decoration: none;
     font-size: 35px;
     position: relative;
@@ -50,7 +66,7 @@ header {
     left: 25%;
     top: 10px;
 }
-#DownloadsPage{
+#DownloadsPage {
     text-decoration: none;
     font-size: 35px;
     position: relative;
@@ -59,9 +75,16 @@ header {
     top: 10px;
 }
 
+#FooterGitHubLink {
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    margin-left: 30px;
+}
+
 /* Стиль главных блоков страницы */
 
-.Container{
+.Container {
     position: relative;
     width: 100%;
     margin-top: 10px;
@@ -69,11 +92,11 @@ header {
 
 /*Стили для блока с описанем и логотипом*/
 
-#DescriptionBlock{
+#DescriptionBlock {
     height: 100px;
     display: flex;
 }
-#ProgramLogo{
+#ProgramLogo {
     position: relative;
     box-shadow: 2px 2px 5px #888;
     height: 70px;
@@ -82,11 +105,11 @@ header {
     border: 2px ridge black;
     transition: 0.4s;
 }
-#ProgramLogo:hover{
+#ProgramLogo:hover {
     transform: scale(1.07);
     border: 2px solid #24db9ef6;
 }
-#Description{
+#Description {
     position: relative;
     color: #05386B;
     font-size: 21px;
@@ -96,7 +119,7 @@ header {
 
 /* Стили для подблоков с кнопкой загрузки и описанием версий */
 
-.ContainerDownload{
+.ContainerDownload {
     display: block;
 
     width: 98%;
@@ -111,7 +134,7 @@ header {
     padding-bottom: 15px;
 }
 
-.VersionDescription{
+.VersionDescription {
     display: flex;
     font-size: 18.5px;
     color: #0e5caa;
@@ -122,7 +145,7 @@ header {
 }
 
 /*Стили класса Button*/
-.Button{
+.Button {
     background-color: #23a87cf6;
     color: #EDF5E1;
     position: relative;
@@ -147,27 +170,27 @@ header {
 
     transition: 0.3s;
 }
-.Button:hover{
+.Button:hover {
     color: #e8fccb;
     border: 2px solid #0c57a1;
     box-shadow: 0px 8px 5px #888;
 }
-.Button:active{
+.Button:active {
     color: #ffffff;
     transition: 0.3s;
     background-color: #0e7754f6;
     border: 2px solid #0d4c4e;
 }
 
-.Pulse{
+.Pulse {
     background-color: #5d8f13;
     border-radius: 50%;
     animation: pulse 0.6s ease-out;
     transform: scale(0);
     position: absolute;
 }
-@keyframes pulse{
-    to{
+@keyframes pulse {
+    to {
         transform: scale(2);
         background-color: #ffffff;
         opacity: 0;
