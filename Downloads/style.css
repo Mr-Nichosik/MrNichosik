@@ -76,12 +76,15 @@ header {
 #ProgramLogo{
     position: relative;
     box-shadow: 2px 2px 5px #888;
-    transition: 0.4s;
-    margin-top: 20px;
+    height: 70px;
+    margin-top: 15px;
     margin-left: 30px;
+    border: 2px ridge black;
+    transition: 0.4s;
 }
 #ProgramLogo:hover{
     transform: scale(1.07);
+    border: 2px solid #24db9ef6;
 }
 #Description{
     position: relative;
@@ -166,4 +169,14 @@ header {
         background-color: #ffffff;
         opacity: 0;
     }
+}
+
+
+.container img {
+
+    transition: 0.4s;
+}
+.container img:hover {
+    transform: scale(1.02);
+
 }

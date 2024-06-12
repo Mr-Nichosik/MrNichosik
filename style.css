@@ -137,7 +137,8 @@ header {
     position: relative;
     box-shadow: 2px 2px 5px #888;
     transition: 0.4s;
-    margin-top: 20px;
+    margin-top: 15px;
+    height: 70px;
     margin-left: 30px;
 }
 #ProgramLogo:hover{
@@ -202,9 +203,10 @@ header {
     width: 600px;
 }
 .container img {
+    border: 2px ridge black;
     transition: 0.4s;
 }
 .container img:hover {
-    border: 1px solid yellow;
     transform: scale(1.02);
+    border: 2px solid #24db9ef6;
 }
