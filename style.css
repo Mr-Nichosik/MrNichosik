@@ -24,17 +24,14 @@ header {
     line-height: 45px;
 }
 
-/*Стили класса Button
-    padding: 10px;
-    outline-style: solid;
-    outline-width: 0.5px;
-    outline-color: #05386B;
-*/
+/* Стили класса Button */
 .Button{
     background-color: #23a87cf6;
     color: #EDF5E1;
 
     display: inline-block;
+
+    user-select: none;
 
     width: 220px;
     height: 40px;

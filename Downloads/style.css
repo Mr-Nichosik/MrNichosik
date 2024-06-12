@@ -94,16 +94,18 @@ header {
 /* Стили для подблоков с кнопкой загрузки и описанием версий */
 
 .ContainerDownload{
+    display: block;
 
     width: 98%;
     border: 3px solid #05386B;
-    height: 105px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 2px 5px #888;
     margin-left: auto;
     margin-right: auto;
+
+    padding-bottom: 15px;
 }
 
 .VersionDescription{

@@ -1,24 +1,26 @@
+
 /*Адаптиация*/
-@media only screen and (max-width: 1625px) {
+@media screen and (max-width: 1701px) {
+    #AboutTextPad{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 984px) {
     #AboutTextPad{
         margin-top: 20px;
     }
 }
 
-@media only screen and (max-width: 1425px) {
-    #InstallationGuideBlock{
-        height: 150px;
-    }
-}
-
-@media only screen and (max-width: 1393px) {
-    #InstallationGuideBlock{
-        height: 180px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    #InstallationGuideBlock{
+@media screen and (max-width: 800px) {
+    #LinksBlock{
         height: 210px;
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #AboutTextPad{
+        margin-top: 10px;
     }
 }
