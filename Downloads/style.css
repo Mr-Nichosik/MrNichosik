@@ -127,6 +127,7 @@ header {
     color: #EDF5E1;
     position: relative;
     display: block;
+    user-select: none;
 
     margin-top: 10px;
     margin-left: 15px;
